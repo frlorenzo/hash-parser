@@ -1,6 +1,6 @@
 {
   "name": "hash-parser",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Utility functions for parsing location.hash",
   "main": "index.js",
   "type": "module",
