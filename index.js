@@ -47,6 +47,10 @@
  */
 const parse = (hstr) => {
 
+  // if '' default to '#'
+  if (hstr.trim() === '')
+    hstr = '#';
+
   // validate parameter; must be string, preceded with #, /
   if (typeof hstr !== 'string' || hstr[0] !== '#' || hstr[1] === '/')
     throw new Error('Invalid hash parameter ' + hstr);

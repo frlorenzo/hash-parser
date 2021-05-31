@@ -2,8 +2,10 @@
 
 Utility functions for parsing [`location.hash`](https://developer.mozilla.org/en-US/docs/Web/API/Location/hash).
 
-## Setup
+## install
+
 ```
+ npm install github:frlorenzo/hash-parser
 ```
 
 

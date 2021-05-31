@@ -1,10 +1,9 @@
 import { expect } from 'chai';
 import * as hash from '../index.js';
 
-
 describe('unit: parse', () => {
 
-  it('parse url', (done) => {
+  it('should parse url', (done) => {
     let o = hash.parse('#person/123/view?foo=1&bar=a');
     expect(o.id).to.be.a('string');
     expect(o.name).to.be.a('string');
@@ -22,21 +21,27 @@ describe('unit: parse', () => {
     done();
   });
 
-  it ('invalid - foo', (done) => {
+  it('\'\' should default to /', (done) => {
+    let o = hash.parse('');
+    expect(o.path).to.equal('/');
+    done();
+  });
+
+  it('foo should be invalid', (done) => {
     expect(() => {
-      hash.parse('#/foo');
+      hash.parse('foo');
     }).to.throw();
     done();
   });
 
-  it ('invalid - /foo', (done) => {
+  it ('/foo should be invalid ', (done) => {
     expect(() => {
-      hash.parse('#/foo');
+      hash.parse('/foo');
     }).to.throw();
     done();
   });
 
-  it ('invalid - #/foo', (done) => {
+  it ('#/foo should be invalid', (done) => {
     expect(() => {
       hash.parse('#/foo');
     }).to.throw();
@@ -46,7 +51,7 @@ describe('unit: parse', () => {
 
 
 describe('unit: params', () => {
-  it('get params', (done) => {
+  it('should get params', (done) => {
     let p = hash.params('#person/123/view?foo=1&bar=a');
 
     expect(p.has('foo')).to.be.true;
@@ -67,21 +72,21 @@ describe('unit: params', () => {
     expect(p).to.equal(null);
   });
 
-  it ('invalid - foo', (done) => {
+  it ('foo should be invalid', (done) => {
     expect(() => {
-      hash.params('#/foo');
+      hash.params('foo');
     }).to.throw();
     done();
   });
 
-  it ('invalid - /foo', (done) => {
+  it ('/foo should be invalid', (done) => {
     expect(() => {
-      hash.params('#/foo');
+      hash.params('/foo');
     }).to.throw();
     done();
   });
 
-  it ('invalid - #/foo', (done) => {
+  it ('#/foo should be invalid', (done) => {
     expect(() => {
       hash.params('#/foo');
     }).to.throw();
