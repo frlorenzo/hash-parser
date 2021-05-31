@@ -1,0 +1,15 @@
+
+# hidden files
+.cache
+.DS_Store
+
+# directories
+build
+debug
+dist
+logs
+node_modules
+
+# root files
+*.log
+*.swp
