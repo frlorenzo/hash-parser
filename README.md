@@ -9,7 +9,7 @@ Utility functions for parsing [`location.hash`](https://developer.mozilla.org/en
 
 ## Function: `parse(hstr: string): object`
 
-The `parse()` function parses a string containing a `#` followed by the fragment identifier of the URL. This can be taken from `location.hash`. The parse function can use a pattern such as `http://hostname/#resource_name/:id/verb?p=v`. Note that this gets the fragment idetifier part only; from `#` onwards. On success, `parse` function returns an object containing parsed data.
+The `parse` function parses a string containing a `#` followed by the fragment identifier of the URL. This can be taken from `location.hash`. The `parse` function can use a pattern such as `http://hostname/#resource_name/:id/verb?p=v`. Note that this gets the fragment idetifier part only; from `#` onwards. On success, `parse` function returns an object containing parsed data.
 
 **Parameters:**
 
