@@ -5,6 +5,7 @@
 
 # directories
 node_modules
+test
 
 # root files
 *.log

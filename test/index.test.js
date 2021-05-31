@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import * as hash from '../index.mjs';
+import * as hash from '../index.js';
 
 
 describe('unit: parse', () => {

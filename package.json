@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "clear; mocha --reporter=spec --recursive 'test/**/*.mjs'"
+    "test": "clear; mocha --reporter=spec --recursive 'test/**/*.js'"
   },
   "keywords": [],
   "author": "",
