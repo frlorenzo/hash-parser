@@ -1,4 +1,4 @@
-# hash-parser
+# viojan-hash-parser
 
 Utility functions for parsing [`location.hash`](https://developer.mozilla.org/en-US/docs/Web/API/Location/hash).
 
