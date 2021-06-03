@@ -1,7 +1,7 @@
 {
   "name": "viojan-hash-parser",
   "version": "0.0.1",
-  "description": "Utility functions for parsing location.hash",
+  "description": "location.hash parsing utility",
   "main": "index.js",
   "private": true,
   "type": "module",
