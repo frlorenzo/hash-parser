@@ -13,9 +13,11 @@ Utility functions for parsing [`location.hash`](https://developer.mozilla.org/en
 
 The `parse` function parses a string containing a `#` followed by the fragment identifier of the URL. This can be taken from `location.hash`. The `parse` function can use a pattern such as `http://hostname/#resource_name/:id/verb?p=v`. Note that this gets the fragment idetifier part only; from `#` onwards. On success, `parse` function returns an object containing parsed data.
 
+
 **Parameters:**
 
 - `hstr`. The anchor part of a URL. Use [`location.hash`](https://developer.mozilla.org/en-US/docs/Web/API/Location/hash) property.
+
 
 **Returns:**
 
@@ -26,6 +28,7 @@ Returns an *object* containing
 - `verb`. Action of request. *Ex.: new, update, etc.*
 - `query`. Query parameter object
 - `path`. Route path/key
+
 
 **Example:**
 
@@ -46,6 +49,7 @@ Sample output
   path: '/person/:id/view'
 }
 ```
+
 
 **See Also:**
 

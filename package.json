@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "description": "Utility functions for parsing location.hash",
   "main": "index.js",
+  "private": true,
   "type": "module",
   "scripts": {
     "test": "clear; mocha --reporter=spec --recursive 'test/**/*.js'"
   },
   "keywords": [],
-  "author": "",
+  "author": "Felipe Lorenzo VI",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.4",
