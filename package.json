@@ -1,5 +1,5 @@
 {
-  "name": "viojan-hash-parser",
+  "name": "hash-parser",
   "version": "0.0.1",
   "description": "location.hash parsing utility",
   "main": "index.js",
