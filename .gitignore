@@ -13,3 +13,4 @@ node_modules
 # root files
 *.log
 *.swp
+package-lock.json
