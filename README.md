@@ -1,11 +1,11 @@
-# viojan-hash-parser
+# hash-parser
 
 Utility functions for parsing [`location.hash`](https://developer.mozilla.org/en-US/docs/Web/API/Location/hash).
 
 ## install
 
 ```
- npm install github:frlorenzo/viojan-hash-parser
+ npm install github:vanilla-spa/hash-parser
 ```
 
 
@@ -33,7 +33,7 @@ Returns an *object* containing
 **Example:**
 
 ```javascript
-import { parse } from 'viojan-hash-parser';
+import { parse } from 'hash-parser';
 
 console.log(parse('#person/123/view?foo=1&bar=a'));
 ```
@@ -71,7 +71,7 @@ The `params()` function is a utility to work with query string on the current lo
 **Example:**
 
 ```javascript
-import { params } from 'viojan-hash-parser';
+import { params } from 'hash-parser';
 
 let p = params('#person/123/view?foo=1&bar=a');
 
